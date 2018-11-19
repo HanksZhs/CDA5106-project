@@ -1,0 +1,20 @@
+que time
+128	3.420
+256	3.283
+512	3.161
+1MB 	3.067
+
+
+
+system.cpu.fetch.MiscStallCycles 
+128	21891371
+256	17176415
+512	13101841
+1mb	  8267433
+
+
+system.cpu.fetch.IcacheWaitRetryStallCycles
+128	36992812
+256	30510368 
+512	26087314
+1MB	20947041 
