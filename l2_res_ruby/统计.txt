@@ -18,3 +18,9 @@ system.cpu.fetch.IcacheWaitRetryStallCycles
 256	30510368 
 512	26087314
 1MB	20947041 
+
+system.ruby.L2Cache_Controller.L2_Replacement
+128	38055680
+256	31864215
+512	22002283
+1MB 	13437433

@@ -1,0 +1,724 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+
+[    0.000000] Initializing cgroup subsys cpu
+
+[    0.000000] Linux version 4.4.0+ (root@bbdeb8fab105) (gcc version 5.4.0 20160609 (Ubuntu/Linaro 5.4.0-6ubuntu1~16.04.4) ) #1 SMP PREEMPT Fri Jun 16 09:13:26 UTC 2017
+
+[    0.000000] Boot CPU: AArch64 Processor [410fc0f0]
+
+[    0.000000] Memory limited to 512MB
+
+[    0.000000] cma: Reserved 16 MiB at 0x000000009f000000
+
+[    0.000000] On node 0 totalpages: 131072
+
+[    0.000000]   DMA zone: 2048 pages used for memmap
+
+[    0.000000]   DMA zone: 0 pages reserved
+
+[    0.000000]   DMA zone: 131072 pages, LIFO batch:31
+
+[    0.000000] PERCPU: Embedded 15 pages/cpu @ffffffc01efe4000 s23320 r8192 d29928 u61440
+
+[    0.000000] pcpu-alloc: s23320 r8192 d29928 u61440 alloc=15*4096
+
+[    0.000000] pcpu-alloc: [0] 0 
+
+[    0.000000] Detected PIPT I-cache on CPU0
+
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 129024
+
+[    0.000000] Kernel command line: earlyprintk=pl011,0x1c090000 console=ttyAMA0 lpj=19988480 norandmaps rw loglevel=8 mem=512MB root=/dev/sda1
+
+[    0.000000] PID hash table entries: 2048 (order: 2, 16384 bytes)
+
+[    0.000000] Dentry cache hash table entries: 65536 (order: 7, 524288 bytes)
+
+[    0.000000] Inode-cache hash table entries: 32768 (order: 6, 262144 bytes)
+
+[    0.000000] software IO TLB [mem 0x99c00000-0x9dc00000] (64MB) mapped at [ffffffc019c00000-ffffffc01dbfffff]
+
+[    0.000000] Memory: 416368K/524288K available (5342K kernel code, 347K rwdata, 1964K rodata, 232K init, 237K bss, 91536K reserved, 16384K cma-reserved)
+
+[    0.000000] Virtual kernel memory layout:
+
+[    0.000000]     vmalloc : 0xffffff8000000000 - 0xffffffbdbfff0000   (   246 GB)
+
+[    0.000000]     vmemmap : 0xffffffbdc0000000 - 0xffffffbfc0000000   (     8 GB maximum)
+
+[    0.000000]               0xffffffbdc2000000 - 0xffffffbdc2800000   (     8 MB actual)
+
+[    0.000000]     fixed   : 0xffffffbffa7fd000 - 0xffffffbffac00000   (  4108 KB)
+
+[    0.000000]     PCI I/O : 0xffffffbffae00000 - 0xffffffbffbe00000   (    16 MB)
+
+[    0.000000]     modules : 0xffffffbffc000000 - 0xffffffc000000000   (    64 MB)
+
+[    0.000000]     memory  : 0xffffffc000000000 - 0xffffffc020000000   (   512 MB)
+
+[    0.000000]       .init : 0xffffffc0007a4000 - 0xffffffc0007de000   (   232 KB)
+
+[    0.000000]       .text : 0xffffffc000080000 - 0xffffffc0007a3b54   (  7311 KB)
+
+[    0.000000]       .data : 0xffffffc0007f1000 - 0xffffffc000847ec0   (   348 KB)
+
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+
+[    0.000000] Preemptible hierarchical RCU implementation.
+
+[    0.000000] 	Build-time adjustment of leaf fanout to 64.
+
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=1.
+
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=1
+
+[    0.000000] NR_IRQS:64 nr_irqs:64 0
+
+[    0.000000] Architected cp15 timer(s) running at 25.16MHz (virt).
+
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x5cdd39714, max_idle_ns: 440795202620 ns
+
+[    0.000002] sched_clock: 56 bits at 25MHz, resolution 39ns, wraps every 4398046511084ns
+
+[    0.000057] Console: colour dummy device 80x25
+
+[    0.000065] Calibrating delay loop (skipped) preset value.. 9994.24 BogoMIPS (lpj=19988480)
+
+[    0.000070] pid_max: default: 32768 minimum: 301
+
+[    0.000104] Mount-cache hash table entries: 1024 (order: 1, 8192 bytes)
+
+[    0.000108] Mountpoint-cache hash table entries: 1024 (order: 1, 8192 bytes)
+
+[    0.000458] ASID allocator initialised with 256 entries
+
+[    0.020114] Brought up 1 CPUs
+
+[    0.020118] SMP: Total of 1 processors activated.
+
+[    0.020123] CPU: All CPU(s) started at EL1
+
+[    0.020352] devtmpfs: initialized
+
+[    0.021226] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+
+[    0.024767] atomic64_test: passed
+
+[    0.025665] NET: Registered protocol family 16
+
+[    0.040478] vdso: 2 pages (1 code @ ffffffc0007f9000, 1 data @ ffffffc0007f8000)
+
+[    0.040496] hw-breakpoint: found 2 breakpoint and 2 watchpoint registers.
+
+[    0.040899] DMA: preallocated 256 KiB pool for atomic allocations
+
+[    0.040905] Serial: AMBA PL011 UART driver
+
+[    0.041527] 1c090000.uart: ttyAMA0 at MMIO 0x1c090000 (irq = 8, base_baud = 0) is a PL011 rev3
+
+[    0.042676] console [ttyAMA0] enabled
+
+[    0.072354] vgaarb: loaded
+
+[    0.072525] SCSI subsystem initialized
+
+[    0.076163] libata version 3.00 loaded.
+
+[    0.076302] usbcore: registered new interface driver usbfs
+
+[    0.076347] usbcore: registered new interface driver hub
+
+[    0.076385] usbcore: registered new device driver usb
+
+[    0.076456] pps_core: LinuxPPS API ver. 1 registered
+
+[    0.076474] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+
+[    0.076514] PTP clock support registered
+
+[    0.077276] clocksource: Switched to clocksource arch_sys_counter
+
+[    0.083351] NET: Registered protocol family 2
+
+[    0.083636] TCP established hash table entries: 4096 (order: 3, 32768 bytes)
+
+[    0.083701] TCP bind hash table entries: 4096 (order: 4, 65536 bytes)
+
+[    0.083806] TCP: Hash tables configured (established 4096 bind 4096)
+
+[    0.083863] UDP hash table entries: 256 (order: 1, 8192 bytes)
+
+[    0.083895] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+
+[    0.083998] NET: Registered protocol family 1
+
+[    0.090685] RPC: Registered named UNIX socket transport module.
+
+[    0.090709] RPC: Registered udp transport module.
+
+[    0.090726] RPC: Registered tcp transport module.
+
+[    0.090743] RPC: Registered tcp NFSv4.1 backchannel transport module.
+
+[    0.090772] PCI: CLS 0 bytes, default 128
+
+[    0.091049] kvm [1]: HYP mode not available
+
+[    0.091542] futex hash table entries: 256 (order: 3, 32768 bytes)
+
+[    0.096151] HugeTLB registered 2 MB page size, pre-allocated 0 pages
+
+[    0.104996] fuse init (API version 7.23)
+
+[    0.105837] io scheduler noop registered
+
+[    0.105952] io scheduler cfq registered (default)
+
+[    0.106167] PCI host bridge /pci ranges:
+
+[    0.106184]   No bus range found for /pci, using [bus 00-ff]
+
+[    0.106211]    IO 0x2f000000..0x2f00ffff -> 0x00000000
+
+[    0.106233]   MEM 0x40000000..0x7fffffff -> 0x40000000
+
+[    0.108486] pci-host-generic 30000000.pci: PCI host bridge to bus 0000:00
+
+[    0.108515] pci_bus 0000:00: root bus resource [bus 00-ff]
+
+[    0.108537] pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+
+[    0.108560] pci_bus 0000:00: root bus resource [mem 0x40000000-0x7fffffff]
+
+[    0.108585] pci_bus 0000:00: scanning bus
+
+[    0.108610] pci 0000:00:01.0: [8086:7111] type 00 class 0x010185
+
+[    0.108638] pci 0000:00:01.0: reg 0x10: [io  0x0000-0x0007]
+
+[    0.108659] pci 0000:00:01.0: reg 0x14: [io  0x0000-0x0003]
+
+[    0.108681] pci 0000:00:01.0: reg 0x18: [io  0x0000-0x0007]
+
+[    0.108703] pci 0000:00:01.0: reg 0x1c: [io  0x0000-0x0003]
+
+[    0.108724] pci 0000:00:01.0: reg 0x20: [io  0x0000-0x000f]
+
+[    0.108748] pci 0000:00:01.0: reg 0x30: [mem 0x00000000-0x000007ff pref]
+
+[    0.109004] pci_bus 0000:00: fixups for bus
+
+[    0.109021] pci_bus 0000:00: bus scan returning with max=00
+
+[    0.109048] pci 0000:00:01.0: fixup irq: got 10
+
+[    0.109066] pci 0000:00:01.0: assigning IRQ 10
+
+[    0.109091] pci 0000:00:01.0: BAR 6: assigned [mem 0x40000000-0x400007ff pref]
+
+[    0.109118] pci 0000:00:01.0: BAR 4: assigned [io  0x1000-0x100f]
+
+[    0.109142] pci 0000:00:01.0: BAR 0: assigned [io  0x1010-0x1017]
+
+[    0.109165] pci 0000:00:01.0: BAR 2: assigned [io  0x1018-0x101f]
+
+[    0.109188] pci 0000:00:01.0: BAR 1: assigned [io  0x1020-0x1023]
+
+[    0.109212] pci 0000:00:01.0: BAR 3: assigned [io  0x1024-0x1027]
+
+[    0.111880] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+
+[    0.118537] ata_piix 0000:00:01.0: version 2.13
+
+[    0.118563] ata_piix 0000:00:01.0: enabling device (0000 -> 0001)
+
+[    0.118617] ata_piix 0000:00:01.0: enabling bus mastering
+
+[    0.123744] scsi host0: ata_piix
+
+[    0.128009] scsi host1: ata_piix
+
+[    0.128121] ata1: PATA max UDMA/33 cmd 0x1010 ctl 0x1020 bmdma 0x1000 irq 10
+
+[    0.128145] ata2: PATA max UDMA/33 cmd 0x1018 ctl 0x1024 bmdma 0x1008 irq 10
+
+[    0.128413] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+
+[    0.128437] e1000: Copyright (c) 1999-2006 Intel Corporation.
+
+[    0.128492] e1000e: Intel(R) PRO/1000 Network Driver - 3.2.6-k
+
+[    0.128512] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+
+[    0.128567] igb: Intel(R) Gigabit Ethernet Network Driver - version 5.3.0-k
+
+[    0.128591] igb: Copyright (c) 2007-2014 Intel Corporation.
+
+[    0.128643] ixgbe: Intel(R) 10 Gigabit PCI Express Network Driver - version 4.2.1-k
+
+[    0.128668] ixgbe: Copyright (c) 1999-2015 Intel Corporation.
+
+[    0.128725] ixgbevf: Intel(R) 10 Gigabit PCI Express Virtual Function Network Driver - version 2.12.1-k
+
+[    0.128755] ixgbevf: Copyright (c) 2009 - 2012 Intel Corporation.
+
+[    0.128810] i40e: Intel(R) Ethernet Connection XL710 Network Driver - version 1.3.46-k
+
+[    0.128836] i40e: Copyright (c) 2013 - 2014 Intel Corporation.
+
+[    0.128893] ixgb: Intel(R) PRO/10GbE Network Driver - version 1.0.135-k2-NAPI
+
+[    0.128917] ixgb: Copyright (c) 1999-2008 Intel Corporation.
+
+[    0.128986] i40evf: Intel(R) XL710/X710 Virtual Function Network Driver - version 1.3.33
+
+[    0.129013] Copyright (c) 2013 - 2015 Intel Corporation.
+
+[    0.129251] usbcore: registered new interface driver usb-storage
+
+[    0.129686] mousedev: PS/2 mouse device common for all mice
+
+[    0.134324] usbcore: registered new interface driver usbhid
+
+[    0.134344] usbhid: USB HID core driver
+
+[    0.134449] NET: Registered protocol family 17
+
+[    0.284999] ata1.00: ATA-7: M5 IDE Disk, , max UDMA/66
+
+[    0.285020] ata1.00: 44039680 sectors, multi 0: LBA 
+
+[    0.285086] ata1.00: configured for UDMA/33
+
+[    0.289286] scsi 0:0:0:0: Direct-Access     ATA      M5 IDE Disk      n/a  PQ: 0 ANSI: 5
+
+[    0.289770] sd 0:0:0:0: [sda] 44039680 512-byte logical blocks: (22.5 GB/20.9 GiB)
+
+[    0.289881] sd 0:0:0:0: [sda] Write Protect is off
+
+[    0.289901] sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+
+[    0.289948] sd 0:0:0:0: Attached scsi generic sg0 type 0
+
+[    0.290033] sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+
+[    0.290457]  sda: sda1
+
+[    0.290858] sd 0:0:0:0: [sda] Attached SCSI disk
+
+[    0.729122] input: AT Raw Set 2 keyboard as /devices/platform/1c060000.kmi/serio0/input/input0
+
+[    2.629213] input: PS/2 Generic Mouse as /devices/platform/1c070000.kmi/serio1/input/input2
+
+[    2.629591] EXT4-fs (sda1): couldn't mount as ext3 due to feature incompatibilities
+
+[    2.635276] EXT4-fs (sda1): mounted filesystem without journal. Opts: (null)
+
+[    2.635311] VFS: Mounted root (ext4 filesystem) on device 8:1.
+
+[    2.636092] devtmpfs: mounted
+
+[    2.636200] Freeing unused kernel memory: 232K (ffffffc0007a4000 - ffffffc0007de000)
+
+[    2.636242] Freeing alternatives memory: 52K (ffffffc0007de000 - ffffffc0007eb000)
+
+
+INIT: version 2.88 booting
+
+
+Starting udev
+
+[    2.705437] udevd[622]: starting version 182
+
+[    2.869897] EXT4-fs (sda1): re-mounted. Opts: block_validity,delalloc,barrier,user_xattr
+
+Starting Bootlog daemon: bootlogd.
+
+
+[    2.891450] random: dd urandom read with 38 bits of entropy available
+
+Populating dev cache
+
+
+net.ipv4.conf.default.rp_filter = 1
+
+
+net.ipv4.conf.all.rp_filter = 1
+
+
+hwclock: can't open '/dev/misc/rtc': No such file or directory
+
+
+Mon Jan 27 08:00:00 UTC 2014
+
+
+hwclock: can't open '/dev/misc/rtc': No such file or directory
+
+
+
+INIT: Entering runlevel: 5
+
+
+
+Configuring network interfaces... ifconfig: SIOCGIFFLAGS: No such device
+
+
+Starting rpcbind daemon...rpcbind: cannot create socket for udp6
+
+
+
+rpcbind: cannot create socket for tcp6
+
+
+
+done.
+
+
+rpcbind: cannot get uid of '': Success
+
+
+
+creating NFS state directory: done
+
+
+starting statd: done
+
+
+Starting auto-serial-console: done
+
+
+Stopping Bootlog daemon: bootlogd.
+
+
+INIT: no more processes left in this runlevel
+
+
+
+
+Last login: Mon Jan 27 08:00:03 UTC 2014 on tty1
+
+root@genericarmv8:~# cd parsec-3.0/bin
+
+root@genericarmv8:~/parsec-3.0/bin# 
+
+root@genericarmv8:~/parsec-3.0/bin# ./parsecmgmt -i simmedium -a run -p ferret
+
+[PARSEC] Benchmarks to run:  parsec.ferret
+
+
+
+[PARSEC] [========== Running benchmark parsec.ferret [1] ==========]
+
+[PARSEC] Deleting old run directory.
+
+[PARSEC] Setting up run directory[ 2676.452035] random: nonblocking pool is initialized
+
+.
+
+[PARSEC] Unpacking benchmark input 'simmedium'.
+
+corel/
+
+corel/__cass.env
+
+corel/corel.raw
+
+corel/lsh.lsh
+
+corel/map_corel.map
+
+queries/
+
+queries/acorn.jpg
+
+queries/air-fighter.jpg
+
+queries/airplane-2.jpg
+
+queries/airplane-takeoff-3.jpg
+
+queries/alcatraz-island-prison.jpg
+
+queries/american-flag-3.jpg
+
+queries/apartment.jpg
+
+queries/apollo-2.jpg
+
+queries/apollo-earth.jpg
+
+queries/apple-11.jpg
+
+queries/apple-14.jpg
+
+queries/apple-16.jpg
+
+queries/apple-7.jpg
+
+queries/aquarium-fish-25.jpg
+
+queries/arches-9.jpg
+
+queries/arches.jpg
+
+queries/archipelago-2.jpg
+
+queries/archipelago.jpg
+
+queries/balboa-park.jpg
+
+queries/balloons-14.jpg
+
+queries/banana-1.jpg
+
+queries/bay.jpg
+
+queries/beach-2.jpg
+
+queries/bee.jpg
+
+queries/bird-2.jpg
+
+queries/black-currant-4.jpg
+
+queries/black-headed-sheep.jpg
+
+queries/boat-race.jpg
+
+queries/bookshelf.jpg
+
+queries/branch-2.jpg
+
+queries/buttercup-2.jpg
+
+queries/cable-2.jpg
+
+queries/cabrillo-national-monument.jpg
+
+queries/cactus-115.jpg
+
+queries/cactus-71.jpg
+
+queries/caesars-palace-2.jpg
+
+queries/canyon.jpg
+
+queries/cheese-plate.jpg
+
+queries/church-tower-with-mountain-in-background.jpg
+
+queries/civic-si-2.jpg
+
+queries/clip-3.jpg
+
+queries/clock-2.jpg
+
+queries/clock.jpg
+
+queries/clouds-2.jpg
+
+queries/coast.jpg
+
+queries/coffee-beans-2.jpg
+
+queries/columbia-start.jpg
+
+queries/concrete-cross.jpg
+
+queries/crawfish-3.jpg
+
+queries/death-valley-sand-dunes.jpg
+
+queries/duck-4.jpg
+
+queries/duck-5.jpg
+
+queries/egret-2.jpg
+
+queries/ellen-browning-scripps-park.jpg
+
+queries/field-20.jpg
+
+queries/figs.jpg
+
+queries/fireworks-11.jpg
+
+queries/fly.jpg
+
+queries/food-18.jpg
+
+queries/forest-16.jpg
+
+queries/forest-3.jpg
+
+queries/forest-38.jpg
+
+queries/forest-54.jpg
+
+queries/forest-65.jpg
+
+[PARSEC] Running 'time /home/root/parsec-3.0/bin/../pkgs/apps/ferret/inst/aarch64-linux.gcc/bin/ferret corel lsh queries 10 20 1 output.txt':
+
+[PARSEC] [---------- Beginning of output ----------]
+
+PARSEC Benchmark Suite Version 3.0-beta-20150206
+
+(4,1)
+
+(45,2)
+
+(46,3)
+
+(48,4)
+
+(51,5)
+
+(51,6)
+
+(53,7)
+
+(54,8)
+
+(55,9)
+
+(59,10)
+
+(59,11)
+
+(60,12)
+
+(61,13)
+
+(64,14)
+
+(64,15)
+
+(64,16)
+
+(64,17)
+
+(64,18)
+
+(64,19)
+
+(64,20)
+
+(64,21)
+
+(64,22)
+
+(64,23)
+
+(64,24)
+
+(64,25)
+
+(64,26)
+
+(64,27)
+
+(64,28)
+
+(64,29)
+
+(64,30)
+
+(64,31)
+
+(64,32)
+
+(64,33)
+
+(64,34)
+
+(64,35)
+
+(64,36)
+
+(64,37)
+
+(64,38)
+
+(64,39)
+
+(64,40)
+
+(64,41)
+
+(64,42)
+
+(64,43)
+
+(64,44)
+
+(64,45)
+
+(64,46)
+
+(64,47)
+
+(64,48)
+
+(64,49)
+
+(64,50)
+
+(64,51)
+
+(64,52)
+
+(64,53)
+
+(64,54)
+
+(64,55)
+
+(64,56)
+
+(64,57)
+
+(64,58)
+
+(64,59)
+
+(64,60)
+
+(64,61)
+
+(64,62)
+
+(64,63)
+
+(64,64)
+
+QUERY TIME: 3.067 seconds
+
+
+
+real	0m3.135s
+
+user	0m3.032s
+
+sys	0m0.084s
+
+[PARSEC] [----------    End of output    ----------]
+
+[PARSEC]
+
+[PARSEC] BIBLIOGRAPHY
+
+[PARSEC]
+
+[PARSEC] [1] Bienia. Benchmarking Modern Multiprocessors. Ph.D. Thesis, 2011.
+
+[PARSEC]
+
+[PARSEC] Done.
+
+root@genericarmv8:~/parsec-3.0/bin# 
+
+root@genericarmv8:~/parsec-3.0/bin# m5 dumpstats
+
+root@genericarmv8:~/parsec-3.0/bin# 
+
+root@genericarmv8:~/parsec-3.0/bin# 
